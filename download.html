@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载 EZTap 一键无忧 - 银龄关怀应用</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+<!-- 导航栏 -->
+<header class="bg-white shadow-sm fixed w-full z-10">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <a href="index.html" class="flex items-center">
+                <div class="text-3xl font-bold text-blue-600">EZTap</div>
+                <span class="ml-2 text-lg text-gray-600">一键无忧</span>
+            </a>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+            <a href="index.html#features" class="text-lg text-gray-700 hover:text-blue-600 transition">功能特点</a>
+            <a href="index.html#how-it-works" class="text-lg text-gray-700 hover:text-blue-600 transition">使用方法</a>
+            <a href="index.html#testimonials" class="text-lg text-gray-700 hover:text-blue-600 transition">用户评价</a>
+            <a href="download.html" class="text-lg text-blue-600 font-semibold transition">立即下载</a>
+        </nav>
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-gray-500 hover:text-blue-600 focus:outline-none">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- 移动端菜单 -->
+    <div id="mobile-menu" class="md:hidden bg-white shadow-md hidden">
+        <div class="container mx-auto px-4 py-3">
+            <a href="index.html#features" class="block py-2 text-gray-700 hover:text-blue-600 transition">功能特点</a>
+            <a href="index.html#how-it-works" class="block py-2 text-gray-700 hover:text-blue-600 transition">使用方法</a>
+            <a href="index.html#testimonials" class="block py-2 text-gray-700 hover:text-blue-600 transition">用户评价</a>
+            <a href="download.html" class="block py-2 text-blue-600 font-semibold transition">立即下载</a>
+        </div>
+    </div>
+</header>
+
+<!-- 下载区域 -->
+<section class="pt-32 pb-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">下载 EZTap 一键无忧</h1>
+            <p class="text-xl max-w-3xl mx-auto">让科技为您的生活带来便利，开启智能无忧的数字生活</p>
+        </div>
+        
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
+            <!-- App Store 下载 -->
+            <a href="#app-store" class="bg-black hover:bg-gray-900 text-white rounded-xl flex items-center px-8 py-4 transition duration-300 shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mr-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                </svg>
+                <div>
+                    <div class="text-xs">下载应用，取得</div>
+                    <div class="text-2xl font-semibold">App Store</div>
+                </div>
+            </a>
+            
+            <!-- Google Play 下载 -->
+            <a href="#google-play" class="bg-black hover:bg-gray-900 text-white rounded-xl flex items-center px-8 py-4 transition duration-300 shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mr-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3.609 1.814L13.792 12 3.609 22.186c-.181-.181-.29-.43-.29-.704V2.518c0-.274.109-.523.29-.704zm10.831 10.309l2.128-2.127L21.657 12l-5.089 2.004-2.128-2.127 1.941-1.942L16 12l-.619 1.942zM5.865 1.31l8.662 5.056-2.787 2.787L5.865 1.31zm8.662 16.624L5.865 22.69l5.875-7.843 2.787 2.787z" />
+                </svg>
+                <div>
+                    <div class="text-xs">下载应用，取得</div>
+                    <div class="text-2xl font-semibold">Google Play</div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- 二维码下载 -->
+        <div class="mt-16 flex flex-col items-center">
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <div class="w-48 h-48 bg-gray-200 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
+                    </svg>
+                </div>
+            </div>
+            <p class="mt-4 text-lg">扫描二维码下载应用</p>
+        </div>
+    </div>
+</section>
+
+<!-- 下载说明 -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">下载说明</h2>
+            
+            <!-- 系统要求 -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">系统要求</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-blue-50 p-6 rounded-xl">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                            </svg>
+                            <h4 class="text-xl font-semibold">iOS 设备</h4>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>iOS 12.0 或更高版本</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>iPhone 6s 或更新机型</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>iPad Air 2 或更新机型</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>至少 100MB 可用存储空间</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-6 rounded-xl">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M3.609 1.814L13.792 12 3.609 22.186c-.181-.181-.29-.43-.29-.704V2.518c0-.274.109-.523.29-.704zm10.831 10.309l2.128-2.127L21.657 12l-5.089 2.004-2.128-2.127 1.941-1.942L16 12l-.619 1.942zM5.865 1.31l8.662 5.056-2.787 2.787L5.865 1.31zm8.662 16.624L5.865 22.69l5.875-7.843 2.787 2.787z" />
+                            </svg>
+                            <h4 class="text-xl font-semibold">Android 设备</h4>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke
